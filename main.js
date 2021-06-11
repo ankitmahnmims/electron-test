@@ -38,10 +38,6 @@ app.on('activate', function () {
     }
 });
 
-mainWindow.once('ready-to-show', () => {
-    autoUpdater.checkForUpdatesAndNotify();
-});
-
 ipcMain.on('app_version', (event) => {
     event.sender.send('app_version', { version: app.getVersion() });
 });
