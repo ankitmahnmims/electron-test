@@ -1,26 +1,26 @@
 {
-  "name": "test",
+  "name": "electron-auto-update-example",
   "version": "1.0.1",
-  "description": "testing",
+  "description": "",
   "main": "main.js",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/ankitmahnmims/electron-test.git"
+  },
   "scripts": {
-    "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
     "build": "electron-builder build --win --publish never",
     "deploy": "electron-builder build --win --publish always"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^13.1.1",
-    "electron-builder": "^22.10.5"
+    "electron": "^5.0.1",
+    "electron-builder": "^20.40.2"
   },
   "dependencies": {
-    "electron-updater": "^4.3.9"
-  },
-  "repository": {
-    "type" : "git",
-    "url" : "https://github.com/ankitmahnmims/electron-test.git"
+    "electron-updater": "^4.0.6"
   }
 }
 
