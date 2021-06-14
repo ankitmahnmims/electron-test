@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-    <title>Electron Auto Update Example 1.0.1</title>
+    <title>Electron Auto Update version 1.0.0</title>
     <style>
         body {
             box-sizing: border-box;
@@ -47,8 +47,9 @@
     ipcRenderer.send('app_version');
     ipcRenderer.on('app_version', (event, arg) => {
         ipcRenderer.removeAllListeners('app_version');
-        version.innerText = 'Version ' + arg.version;
+        version.innerText = 'version ' + arg.version;
     });
+
     const notification = document.getElementById('notification');
     const message = document.getElementById('message');
     const restartButton = document.getElementById('restart-button');

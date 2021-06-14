@@ -42,6 +42,7 @@ ipcMain.on('app_version', (event) => {
     event.sender.send('app_version', { version: app.getVersion() });
 });
 
+
 autoUpdater.on('update-available', () => {
     mainWindow.webContents.send('update_available');
 });

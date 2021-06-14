@@ -1,7 +1,7 @@
 {
   "name": "test",
-  "version": "1.0.1",
-  "description": "",
+  "version": "1.0.0",
+  "description": "testing",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
@@ -23,3 +23,5 @@
     "url" : "https://github.com/ankitmahnmims/electron-test.git"
   }
 }
+
+
